@@ -1,14 +1,21 @@
+p{
+    font-family: 'Titillium', sans-serif;
+}
+
+
 /* Navbar Start */
 .navbar-image{
     width: 80%;
     height: 10%;
 }
+
 /* Navbar End */
 /*Intro Start */
 .intro-div{
     text-align: center;
     padding-right: 20%;
     padding-bottom: 5%;
+
 }
 .intro-h1{
     font-size: 500%;
@@ -53,6 +60,7 @@
 }
 .service-h1{
     margin-bottom: 5%;
+    font-family: 'Inter', sans-serif;
 }
 .card-img{ 
     margin-top: 5%;
@@ -61,3 +69,26 @@
     margin-bottom: 10%;
 }
 /*Service End */
+/*About Start*/
+.about-div{
+    padding: 10% 10% 6%;
+    text-align: center;
+}
+.about-row{
+    margin-top: 10%;
+}
+.about-p, .about-img{
+    margin-top: 15%;
+}
+.about-p{
+    height:65%
+}
+.about-h1{
+    font-size: xxx-large;
+    font-family: 'Inter', sans-serif;
+}
+.about-img{
+    height: 75%;
+    width: 75%;
+}
+/*About End */
