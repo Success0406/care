@@ -1,13 +1,63 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Navbar Start */
+.navbar-image{
+    width: 80%;
+    height: 10%;
 }
+/* Navbar End */
+/*Intro Start */
+.intro-div{
+    text-align: center;
+    padding-right: 20%;
+    padding-bottom: 5%;
+}
+.intro-h1{
+    font-size: 500%;
+    font-family: 'Inter', sans-serif;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    padding: 5% 0 3%;
 }
+.intro-h5{
+    font-size:150%;
+    font-family: 'Inter', sans-serif;
+}
+.intro-img{
+    height: 100%;
+    width: 100%;
+}
+.global-intro-container{
+    margin: 2% 0 8%;
+}
+@media screen and (max-width: 900px) {
+    .intro-img{
+        height: 70%;
+        width: 70%;
+        margin: 8% 15%
+        
+    }
+    .intro-div{
+        padding-right: 0%; }
+}
+/*Intro End */
+/*Service Start */
+.service-div{
+    padding: 7% 0;
+    text-align: center;
+    background-color: #F0FAFF ;
+}
+.service-row{
+    margin-top: 7%;
+}
+.service-card{
+    margin-top: 5%;
+    text-align: center;
+}
+.service-h1{
+    margin-bottom: 5%;
+}
+.card-img{ 
+    margin-top: 5%;
+}
+.margin-bottom{
+    margin-bottom: 10%;
+}
+/*Service End */
