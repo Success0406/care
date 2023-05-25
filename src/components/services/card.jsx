@@ -8,7 +8,7 @@ import Col from "react-bootstrap/Col";
 const ServiceCard = (props) => {
   return (
     <Col xs={12} sm={6} md={3} lg={4}>
-      <Fade triggerOnce={true} duration={2000} direction="up">
+      <Fade triggerOnce={true} duration={1000} direction="up">
         <Card className="service-card">
           <Card.Img
             variant="top"
