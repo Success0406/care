@@ -5,7 +5,7 @@ import { Fade, Slide } from "react-awesome-reveal";
 import { Row, Col, Container } from "react-bootstrap";
 const Contact = () => {
   return (
-    <div className="contact-div">
+    <div className="contact-div" id="contact-section">
       <Fade triggerOnce={true}>
         <h1 style={{ textAlign: "center" }}>Get In Contact With Us</h1>
         <h3 style={{ textAlign: "center", marginTop: "5%" }}>

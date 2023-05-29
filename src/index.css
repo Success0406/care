@@ -1,6 +1,13 @@
 p{
     font-family: 'Titillium', sans-serif;
 }
+body{
+    font-family: 'Titillium', sans-serif;
+}
+hr 
+    {
+        display: none;
+    }
 h1, h2, h3, h4, h5, h6, h7{
     font-family: 'Inter', sans-serif;
 }
@@ -29,13 +36,11 @@ a:hover {
 }
 .intro-h1{
     font-size: 500%;
-    
-
     padding: 5% 0 3%;
 }
 .intro-h5{
     font-size:150%;
-    font-family: 'Inter', sans-serif;
+
 }
 .intro-img{
     height: 100%;
@@ -53,13 +58,27 @@ a:hover {
     }
     .intro-div{
         padding-right: 0%; }
+
+    hr 
+    {
+        display: block;
+        border: 1px dotted #000000;
+        border-style: none none dotted; 
+        color: #fff; 
+        background-color: #fff;
+    }
 }
+        
 /*Intro End */
 /*Service Start */
 .service-div{
     padding: 7% 0;
     text-align: center;
-    background-color: #F0FAFF ;
+    
+}
+.service-card-div{
+    margin: 5% 3%;
+    text-align: center;
 }
 .service-row{
     margin-top: 7%;
@@ -73,7 +92,8 @@ a:hover {
     font-family: 'Inter', sans-serif;
 }
 .card-img{ 
-    margin-top: 5%;
+    height: "40%";
+    width: "40%";
 }
 .margin-bottom{
     margin-bottom: 10%;
@@ -81,17 +101,15 @@ a:hover {
 /*Service End */
 /*About Start*/
 .about-div{
-    padding: 10% 10% 6%;
+    padding: 10% 0 6% 0;
     text-align: center;
+    background-color: #F0FAFF ;
 }
 .about-row{
     margin-top: 10%;
 }
 .about-p, .about-img{
     margin-top: 15%;
-}
-.about-p{
-    height:65%
 }
 .about-h1{
     font-size: xxx-large;

@@ -7,7 +7,7 @@ import { Fade } from "react-awesome-reveal";
 function Welcome() {
   return (
     <Fade triggerOnce={true} direction="up">
-      <Container className="global-intro-container">
+      <Container className="global-intro-container" id="intro-section">
         <Row>
           <Col lg={7} sm={12}>
             <div className="intro-div">

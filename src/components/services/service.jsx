@@ -8,7 +8,7 @@ import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 const Service = () => {
   return (
-    <div className="service-div">
+    <div className="service-div" id="service-section">
       <h1 className="service-h1">Our Services</h1>
 
       <Container>

@@ -12,8 +12,8 @@ function App() {
     <div>
       <Navbar />
       <WelcomeSection />
-      <ServiceSection />
       <AboutSection />
+      <ServiceSection />
       <ContactSection />
     </div>
   );

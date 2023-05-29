@@ -1,38 +1,38 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
-import Button from "../repeats/button";
-import ListGroup from "react-bootstrap/ListGroup";
+import { useState } from "react";
+import Collapse from "react-bootstrap/Collapse";
+import Button from "react-bootstrap/Button";
 import { Fade } from "react-awesome-reveal";
 import Col from "react-bootstrap/Col";
 
 const ServiceCard = (props) => {
+  const [open, setOpen] = useState(false);
   return (
-    <Col xs={12} sm={6} md={3} lg={4}>
+    <Col xs={12} sm={12} md={6} lg={6}>
       <Fade triggerOnce={true} duration={1000} direction="up">
-        <Card className="service-card">
-          <Card.Img
-            variant="top"
-            style={{ height: "70%", width: "70%", margin: "5% 15% 0" }}
-            className="card-img"
+        <div className="service-card-div">
+          <img
             src={props.image}
+            style={{ height: "40%", width: "40%", margin: "5% 15%" }}
+            className="card-img"
+            alt={props.alt}
           />
-          <Card.Body>
-            <Card.Title className="margin-bottom">{props.title}</Card.Title>
-            <Card.Text className="margin-bottom">{props.text}</Card.Text>
-            <ListGroup className="list-group-flush">
-              <ListGroup.Item>Cras justo odio</ListGroup.Item>
-              <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-              <ListGroup.Item className="margin-bottom">
-                Vestibulum at eros
-              </ListGroup.Item>
-            </ListGroup>
-            <Button
-              message={props.btnMessage}
-              backgroundColor={props.color}
-            ></Button>
-          </Card.Body>
-        </Card>
+          <h5>{props.title}</h5>
+          <p>{props.text}</p>
+          <Button
+            onClick={() => setOpen(!open)}
+            aria-controls="example-collapse-text"
+            aria-expanded={open}
+            style={{ marginBottom: "5%" }}
+          >
+            Learn More
+          </Button>
+          <Collapse in={open}>
+            <div id="example-collapse-text">{props.text}</div>
+          </Collapse>
+        </div>{" "}
       </Fade>
+      <hr />
     </Col>
   );
 };

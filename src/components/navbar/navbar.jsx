@@ -14,11 +14,11 @@ function BasicExample() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
+          <Nav navbarScroll className="ms-auto">
             <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Services</Nav.Link>
-            <Nav.Link href="#link">About</Nav.Link>
-            <Nav.Link href="#link">Contact Us</Nav.Link>
+            <Nav.Link href="#service-section">Services</Nav.Link>
+            <Nav.Link href="#about-section">About</Nav.Link>
+            <Nav.Link href="#contact-section">Contact Us</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
